@@ -1,0 +1,201 @@
+.text-outline {
+    color: white; /* Цвет текста */
+    text-shadow:
+        -1px -1px 0 #999,  /* Серый цвет для обводки */
+         1px -1px 0 #999,
+        -1px  1px 0 #999,
+         1px  1px 0 #999;
+}
+
+.card__imgscpcard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  filter: blur(7px); /* Задайте нужное значение размытия */
+  z-index: -1; /* Убедитесь, что фон находится за текстом */
+}
+
+/* safe */
+
+.card__imgscpsafe {
+    position: relative;
+    width: 300px; 
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid #89C997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__imgscpsafe::before {
+    background-image: url('../img/class/SAFE.jpg');
+  }
+  
+  .card__imgscpsafe p {
+    font-size: 170%;
+    color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+    text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+  }
+  
+  /* Дополнительные стили для текста и других элементов, если это необходимо */
+
+/* euclid */
+
+.card__imgscpeuclid {
+    position: relative;
+    width: 300px; 
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid rgb(255 191 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__imgscpeuclid::before {
+    background-image: url('../img/class/EUCLID.jpg');
+  }
+  
+  .card__imgscpeuclid p {
+    font-size: 170%;
+    color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+    text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+  }
+  
+  /* Дополнительные стили для текста и других элементов, если это необходимо */
+
+/* keter */
+
+  .card__imgscpketer {
+    position: relative;
+    width: 300px; 
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid red; /*#E2725B*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__imgscpketer::before {
+    background-image: url('../img/class/KETER.jpg');
+  }
+  
+  .card__imgscpketer p {
+    font-size: 170%;
+    color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+    text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+  }
+
+/* thaumiel */
+
+.card__imgscpthaumiel {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imgscpthaumiel::before {
+  background-image: url('../img/class/THAUMIEL.jpg');
+}
+
+.card__imgscpthaumiel p {
+  font-size: 170%;
+  color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+  text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+}
+
+/* neutralized */
+
+.card__imgscpneutralized {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid #1E5945;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imgscpneutralized::before {
+  background-image: url('../img/class/NEUTRALIZED.jpg');
+}
+
+.card__imgscpneutralized p {
+  font-size: 170%;
+  color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+  text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+}
+
+/* appolyon */
+
+.card__imgscpappolyon {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imgscpappolyon::before {
+  background-image: url('../img/class/APPOLYON.jpg');
+}
+
+.card__imgscpnappolyon p {
+  font-size: 170%;
+  color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+  text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+}
+
+/* explained */
+
+.card__imgscpexplained {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid #9966CC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imgscpexplained::before {
+  background-image: url('../img/class/EXPLAINED.jpg');
+}
+
+.card__imgscpexplained p {
+  font-size: 170%;
+  color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+  text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+}
+
+/* joke */
+
+.card__imgscpjoke {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid #53377A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__imgscpjoke::before {
+  background-image: url('../img/class/JOKE.jpg');
+}
+
+.card__imgscpjoke p {
+  font-size: 170%;
+  color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+  text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+}

@@ -1,0 +1,71 @@
+.text-outline {
+    color: white; /* Цвет текста */
+    text-shadow:
+        -1px -1px 0 #999,  /* Серый цвет для обводки */
+         1px -1px 0 #999,
+        -1px  1px 0 #999,
+         1px  1px 0 #999;
+}
+
+/* safe */
+
+.card__imgscpsafe {
+    position: relative;
+    width: 300px; 
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid #89C997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__imgscpsafe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    filter: blur(7px); /* Задайте нужное значение размытия */
+    z-index: -1; /* Убедитесь, что фон находится за текстом */
+  }
+  
+  .card__imgscpsafe p {
+    font-size: 170%;
+    color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+    text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+  }
+
+.card__scp014::before {
+  background-image: url('../safe/img/img1.jpg');
+}
+
+.card__scp025::before {
+  background-image: url('../safe/img/img2.jpg');
+}
+
+.card__scp500::before {
+  background-image: url('../safe/img/img3.jpg');
+}
+
+.card__scp714::before {
+  background-image: url('../safe/img/img4.jpg');
+}
+
+.card__scp860::before {
+  background-image: url('../safe/img/img5.jpg');
+}
+
+.card__scp914::before {
+  background-image: url('../safe/img/img6.jpg');
+}
+
+.card__scp999::before {
+  background-image: url('../safe/img/img7.jpg');
+}
+
+.card__scp1025::before {
+  background-image: url('../safe/img/img8.jpg');
+}

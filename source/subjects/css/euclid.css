@@ -1,0 +1,71 @@
+.text-outline {
+    color: white; /* Цвет текста */
+    text-shadow:
+        -1px -1px 0 #999,  /* Серый цвет для обводки */
+         1px -1px 0 #999,
+        -1px  1px 0 #999,
+         1px  1px 0 #999;
+}
+
+/* euclid */
+
+.card__imgscpeuclid {
+    position: relative;
+    width: 300px; 
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid rgb(255 191 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__imgscpeuclid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    filter: blur(7px); /* Задайте нужное значение размытия */
+    z-index: -1; /* Убедитесь, что фон находится за текстом */
+  }
+  
+  .card__imgscpeuclid p {
+    font-size: 170%;
+    color: #FFFFFF; /* Или другой цвет для лучшей видимости */
+    text-shadow: 2px 2px 4px #000000; /* Тень текста для улучшения видимости */
+  }
+
+.card__scp008::before {
+  background-image: url('../euclid/img/img1.jpg');
+}
+
+.card__scp049::before {
+    background-image: url('../euclid/img/img2.jpg');
+  }
+
+.card__scp079::before {
+    background-image: url('../euclid/img/img3.jpg');
+  }
+
+.card__scp096::before {
+    background-image: url('../euclid/img/img4.jpg');
+  }
+
+.card__scp173::before {
+    background-image: url('../euclid/img/img5.jpg');
+  }
+
+.card__scp205::before {
+    background-image: url('../euclid/img/img6.jpg');
+  }
+
+.card__scp372::before {
+    background-image: url('../euclid/img/img7.jpg');
+  }
+
+.card__scp513::before {
+    background-image: url('../euclid/img/img8.jpg');
+  }

@@ -1,0 +1,295 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap"); */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #272727;
+    /* font-family: 'Comfortaa', cursive; */
+}
+
+html, body {
+    font-family: sans-serif;
+}
+
+h1, p, h2 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+.subscribe {
+    background-color: #80A6FF;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__text span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.subscribe__form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscribe__form input {
+    border: none;
+    font: inherit;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.subscribe__form input:focus,
+.subscribe__form input:active {
+    border: none;
+    outline: none;
+}
+
+.push {
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.push:hover {
+    color: #80A6FF;
+}
+
+
+header {
+    padding: 3% 2%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu:hover {
+    color: #80A6FF;
+}
+
+
+.line {
+    width: 60%;
+    margin: 0 auto;
+    height: 2px;
+    background: #80A6FF;
+    margin-bottom: 5%;
+}
+
+.articles {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    overflow: hidden
+}
+
+/* .articless {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    overflow: hidden
+} */
+
+.card {
+    width: 300px; /*30%*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+
+.card__img {
+    width: 100%;
+    height: 300px 400px;
+    object-fit: cover;
+}
+
+.card__text {
+    padding: 3%;
+    background: #80A6FF;
+}
+
+.card__imgscp {
+    display: flex;
+    align-items: center; /* Выравнивает по вертикали */
+    justify-content: center; /* Выравнивает по горизонтали */
+    width: 100%;
+    height: 400px; /* Убедитесь, что вы указали высоту правильно */
+    background-color: #777777;
+    object-fit: cover;
+}
+
+.text-outline {
+    color: white; /* Цвет текста */
+    text-shadow:
+        -1px -1px 0 #999,  /* Серый цвет для обводки */
+         1px -1px 0 #999,
+        -1px  1px 0 #999,
+         1px  1px 0 #999;
+}
+
+
+footer {
+    padding: 3% 5%;
+    background: #484F5F;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.sec1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.sec2 {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+/* ### */
+
+    /* содержимое classcard.css   */
+
+/* ### */
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card{
+        width:40%;
+    }
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card__img {
+        object-fit: contain;
+        width: 98vw;
+      }
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+    .subscribe {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+/* телефоны вертикально */
+
+@media (max-width: 480px) {
+    .subscribe {
+        padding-bottom: 15px;
+    }
+    .subscribe__form {
+        flex-wrap: wrap;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    .articles {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        overflow: hidden;
+        padding: 0;
+    }
+   .footer-list {
+        flex-wrap: wrap;
+    }
+
+}
+
+.red-strike-through {
+    position: relative;
+}
+
+.red-strike-through::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid red; /* Размер и цвет линии */
+    z-index: 1;
+}
+
+.red-strike-through span {
+    position: relative;
+    z-index: 2; /* Это гарантирует, что текст будет над линией */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.top-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: smaller;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bottom-text {
+    position: relative;
+    font-size: 170%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+  }
